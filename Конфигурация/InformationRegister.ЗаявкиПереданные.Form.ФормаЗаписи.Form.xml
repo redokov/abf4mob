@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="37">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="Состояние" id="1">
+					<DataPath>Запись.Состояние</DataPath>
+					<ContextMenu name="СостояниеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="СрокИсполнения" id="22">
+					<DataPath>Запись.СрокИсполнения</DataPath>
+					<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Контрагент" id="13">
+			<DataPath>Запись.Контрагент</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="КонтактноеЛицо" id="16">
+			<DataPath>Запись.КонтактноеЛицо</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Заявка" id="39">
+			<DataPath>Запись.Заявка</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ЗаявкаКонтекстноеМеню" id="40"/>
+			<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="41"/>
+		</InputField>
+		<InputField name="Метро" id="28">
+			<DataPath>Запись.Метро</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="МетроКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="МетроРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Адрес" id="31">
+			<DataPath>Запись.Адрес</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="АдресКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="КонтактнаяИнформация" id="34">
+			<DataPath>Запись.КонтактнаяИнформация</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЗаявкиПереданные</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
