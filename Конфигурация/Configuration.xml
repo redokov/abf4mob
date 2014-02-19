@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>1С-Архитектор бизнеса</Vendor>
-			<Version/>
+			<Version>1.0.10</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -127,10 +127,12 @@
 			<CommonModule>ОбменСАБФ</CommonModule>
 			<CommonCommand>ПолучитьЗаявкиНаСогласование</CommonCommand>
 			<CommonCommand>ОтправитьЗаявкиПереданныеИОбработанныеНаСервер</CommonCommand>
+			<CommonCommand>ОткрытьСписок</CommonCommand>
 			<Constant>Пользователь</Constant>
 			<Constant>Пароль</Constant>
 			<CommonForm>ОсновнаяФорма</CommonForm>
 			<CommonForm>ФормаКонстант</CommonForm>
+			<CommonForm>ФормаТест</CommonForm>
 			<Enum>ВидыКонтактнойИнформации</Enum>
 			<Enum>СостояниеЗаявки</Enum>
 			<InformationRegister>РММ</InformationRegister>

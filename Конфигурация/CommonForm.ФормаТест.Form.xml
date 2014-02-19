@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Заявки переданные</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Реквизит1" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СписокЗаявок</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="Реквизит1КонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="Реквизит1КоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="Реквизит1SearchString" id="47">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="Реквизит1SearchStringContextMenu" id="48"/>
+				<ExtendedTooltip name="Реквизит1SearchStringExtendedTooltip" id="49"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="Реквизит1ViewStatus" id="50">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="Реквизит1ViewStatusContextMenu" id="51"/>
+				<ExtendedTooltip name="Реквизит1ViewStatusExtendedTooltip" id="52"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="Реквизит1SearchControl" id="53">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="Реквизит1SearchControlContextMenu" id="54"/>
+				<ExtendedTooltip name="Реквизит1SearchControlExtendedTooltip" id="55"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="Группа1" id="41">
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<InputField name="Реквизит1Состояние" id="5">
+							<DataPath>СписокЗаявок.Состояние</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Реквизит1СостояниеКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="Реквизит1СостояниеРасширеннаяПодсказка" id="7"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="Реквизит1Заявка" id="14">
+					<DataPath>СписокЗаявок.Заявка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Реквизит1ЗаявкаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="Реквизит1ЗаявкаРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="Реквизит1КонтактнаяИнформация" id="38">
+					<DataPath>СписокЗаявок.КонтактнаяИнформация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Реквизит1КонтактнаяИнформацияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="Реквизит1КонтактнаяИнформацияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<ColumnGroup name="Группа2" id="43">
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<InputField name="Реквизит1Контрагент" id="17">
+							<DataPath>СписокЗаявок.Контрагент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Реквизит1КонтрагентКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="Реквизит1КонтрагентРасширеннаяПодсказка" id="19"/>
+						</InputField>
+						<InputField name="Реквизит1КонтактноеЛицо" id="20">
+							<DataPath>СписокЗаявок.КонтактноеЛицо</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Реквизит1КонтактноеЛицоКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="Реквизит1КонтактноеЛицоРасширеннаяПодсказка" id="22"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="Реквизит1Группа1" id="45">
+					<ExtendedTooltip name="Реквизит1Группа1РасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<InputField name="Реквизит1Метро" id="32">
+							<DataPath>СписокЗаявок.Метро</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Реквизит1МетроКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="Реквизит1МетроРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="Реквизит1МаршрутПроезда" id="29">
+							<DataPath>СписокЗаявок.МаршрутПроезда</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Реквизит1МаршрутПроездаКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="Реквизит1МаршрутПроездаРасширеннаяПодсказка" id="31"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="Реквизит1Адрес" id="35">
+					<DataPath>СписокЗаявок.Адрес</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Реквизит1АдресКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="Реквизит1АдресРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокЗаявок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список заявок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ЗаявкиПереданные</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

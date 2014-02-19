@@ -7,7 +7,12 @@
 	</Events>
 	<ChildItems>
 		<Table name="Заявки" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialListView>Beginning</InitialListView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Заявки</DataPath>
 			<RowPictureDataPath>Заявки.DefaultPicture</RowPictureDataPath>
@@ -24,7 +29,7 @@
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 			<RestoreCurrentRow>false</RestoreCurrentRow>
 			<TopLevelParent xsi:nil="true"/>
-			<ShowRoot>true</ShowRoot>
+			<ShowRoot>false</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<ContextMenu name="ЗаявкиКонтекстноеМеню" id="2"/>
