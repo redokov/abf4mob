@@ -1,51 +1,153 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<InformationRegister uuid="b027090c-3445-404a-9e77-01369755ab8a">
+	<InformationRegister uuid="3df0bf62-063e-4dd4-b35d-afe24c3f3678">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкиПереданные" category="Record">
-				<xr:TypeId>f630babf-c5d7-4b63-9013-d05be96c426a</xr:TypeId>
-				<xr:ValueId>cc9452c3-80c6-40da-ad1f-66abee4c1ae9</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.ЗаявкиПринятые" category="Record">
+				<xr:TypeId>b0969bb1-bd70-4194-b190-a29eb42c444a</xr:TypeId>
+				<xr:ValueId>18c24888-05d9-4fd9-9c1f-db6eeb168779</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.ЗаявкиПереданные" category="Manager">
-				<xr:TypeId>03614e58-4334-44a4-95d6-ef23b1cf2d01</xr:TypeId>
-				<xr:ValueId>e3040d57-9e06-4ba8-bb90-0c4d361b5428</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.ЗаявкиПринятые" category="Manager">
+				<xr:TypeId>f77cf3fe-7d8e-4e6f-84b1-d843d1a759ea</xr:TypeId>
+				<xr:ValueId>f72bacdd-e31c-446e-ae2e-940c4a97ab41</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкиПереданные" category="Selection">
-				<xr:TypeId>80a9dd88-ee68-47b9-ab3e-e807017268a4</xr:TypeId>
-				<xr:ValueId>5fe83fe5-cd86-4ae7-84dd-9237d304af55</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.ЗаявкиПринятые" category="Selection">
+				<xr:TypeId>5960ad15-4855-4a34-861b-41c01255db38</xr:TypeId>
+				<xr:ValueId>5c48bb44-6f66-463b-b219-136d5c4b5c7f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.ЗаявкиПереданные" category="List">
-				<xr:TypeId>1f04389e-f951-4269-844b-7b7e2a9facb6</xr:TypeId>
-				<xr:ValueId>bce98cb8-fde7-429a-8581-18d5d9eb528d</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.ЗаявкиПринятые" category="List">
+				<xr:TypeId>ebfc84e4-792d-43e0-a018-62af8cee5751</xr:TypeId>
+				<xr:ValueId>bdf8a04d-c710-4970-99ba-bdd33ca895e2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкиПереданные" category="RecordSet">
-				<xr:TypeId>b7b7374b-c766-475c-afea-d047425e543f</xr:TypeId>
-				<xr:ValueId>17802570-9494-40b3-a3ed-aad4103671af</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ЗаявкиПринятые" category="RecordSet">
+				<xr:TypeId>13bb5f3e-5a6f-40b5-87de-f5c2bce39289</xr:TypeId>
+				<xr:ValueId>390b1518-334f-4592-aa56-748abd1c1cfa</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкиПереданные" category="RecordKey">
-				<xr:TypeId>bd56e08f-ce52-451a-aaa6-df498d21b8cd</xr:TypeId>
-				<xr:ValueId>259a2639-a099-4e42-8ec6-456a2e57c34b</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ЗаявкиПринятые" category="RecordKey">
+				<xr:TypeId>b024bb44-7ec0-46e2-b336-42068d6085fa</xr:TypeId>
+				<xr:ValueId>3e6feb54-ba66-4b8d-8e35-5bf3b6f3431d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкиПереданные" category="RecordManager">
-				<xr:TypeId>334f813f-bdde-4753-b913-beb217ba94f6</xr:TypeId>
-				<xr:ValueId>2fc3e12a-8e28-454b-a299-a0967a47d92e</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ЗаявкиПринятые" category="RecordManager">
+				<xr:TypeId>7d77f079-0d40-4c52-b3d9-547fe78e1eb2</xr:TypeId>
+				<xr:ValueId>2a30ba12-094c-4847-ab35-a143960299da</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ЗаявкиПереданные</Name>
+			<Name>ЗаявкиПринятые</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заявки переданные</v8:content>
+					<v8:content>Заявки принятые</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm>InformationRegister.ЗаявкиПереданные.Form.ФормаЗаписи</DefaultRecordForm>
+			<DefaultRecordForm>InformationRegister.ЗаявкиПринятые.Form.ФормаЗаписи</DefaultRecordForm>
 			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Active">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="LineNumber">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Recorder">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Period">
+					<xr:LinkByType/>
+					<xr:FillChecking>ShowError</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
@@ -61,7 +163,7 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="7d5bb62f-25c5-414b-a818-f3763f9a5381">
+			<Resource uuid="1da29679-0482-484f-a4cd-1a960290e663">
 				<Properties>
 					<Name>Заявка</Name>
 					<Synonym>
@@ -103,7 +205,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Resource uuid="080f824d-0905-413a-be5f-58cf49c23d34">
+			<Resource uuid="b19e61c7-7003-40b7-87d8-e612e8ec75e6">
 				<Properties>
 					<Name>Контрагент</Name>
 					<Synonym>
@@ -145,7 +247,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Resource uuid="82b1502b-6ffa-465e-8686-a90cf481624c">
+			<Resource uuid="a508fbc3-d636-43f0-9390-3230233f00ae">
 				<Properties>
 					<Name>КонтактноеЛицо</Name>
 					<Synonym>
@@ -187,7 +289,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Resource>
-			<Attribute uuid="68c77141-0a55-46fb-85fa-adf058e4d27a">
+			<Attribute uuid="718beb85-1987-4690-adcb-7dcfdbfecdc8">
 				<Properties>
 					<Name>ВерсияДанных</Name>
 					<Synonym>
@@ -229,7 +331,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="6db202d4-35a4-4f52-8324-3916176f6869">
+			<Attribute uuid="fcc6ebc3-2fff-46e5-989e-be79ae62ec10">
 				<Properties>
 					<Name>СрокИсполнения</Name>
 					<Synonym>
@@ -270,7 +372,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="65b2f334-8767-4776-8e52-83df3ddef1a5">
+			<Attribute uuid="59ed8c85-0642-46ff-8c14-b5d7979de01b">
 				<Properties>
 					<Name>МаршрутПроезда</Name>
 					<Synonym>
@@ -312,7 +414,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="5891cd28-6f51-4f9f-92bf-d235736443d9">
+			<Attribute uuid="ca38f839-ce59-4e07-a350-2e362c7ea793">
 				<Properties>
 					<Name>Метро</Name>
 					<Synonym>
@@ -354,7 +456,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c1d10ea8-102a-4d87-9912-63904a52f0fb">
+			<Attribute uuid="921ad26c-b05f-454d-820d-7b77c874c601">
 				<Properties>
 					<Name>Адрес</Name>
 					<Synonym>
@@ -396,7 +498,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="85921be5-ec47-4338-9df6-a62e31f7d789">
+			<Attribute uuid="04a1fb00-cfd3-4336-abef-446233343125">
 				<Properties>
 					<Name>КонтактнаяИнформация</Name>
 					<Synonym>
@@ -438,7 +540,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Dimension uuid="6d654745-8708-4653-89bd-be50ac025bbc">
+			<Dimension uuid="8677f426-7a97-42bd-81e4-f5e3d7c57dc5">
 				<Properties>
 					<Name>Состояние</Name>
 					<Synonym>
@@ -449,7 +551,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.СостояниеЗаявкиПереданные</v8:Type>
+						<v8:Type>cfg:EnumRef.СостояниеЗаявкиПринятые</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -479,7 +581,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="a5f32924-dad0-4d89-8456-a04f1b93cf72">
+			<Dimension uuid="578bcb0e-0741-4a1f-9427-a78f574960ae">
 				<Properties>
 					<Name>Дата</Name>
 					<Synonym>
@@ -523,7 +625,7 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="50bd2d6f-0637-41fb-97f1-b6ab4da092aa">
+			<Dimension uuid="89c7137e-e6f9-455c-91ce-fbad8fa5e13e">
 				<Properties>
 					<Name>Номер</Name>
 					<Synonym>

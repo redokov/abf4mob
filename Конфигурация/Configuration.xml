@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>1С-Архитектор бизнеса</Vendor>
-			<Version>1.0.10</Version>
+			<Version>1.0.17</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -125,18 +125,23 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>ОбменСАБФ</CommonModule>
-			<CommonCommand>ПолучитьЗаявкиНаСогласование</CommonCommand>
-			<CommonCommand>ОтправитьЗаявкиПереданныеИОбработанныеНаСервер</CommonCommand>
-			<CommonCommand>ОткрытьСписок</CommonCommand>
+			<CommonCommand>ПолучитьЗаявки</CommonCommand>
+			<CommonCommand>ОтправитьЗаявкиНаСервер</CommonCommand>
+			<CommonCommand>ЗаявкиПринятые</CommonCommand>
+			<CommonCommand>ЗаявкиПереданные</CommonCommand>
 			<Constant>Пользователь</Constant>
 			<Constant>Пароль</Constant>
-			<CommonForm>ОсновнаяФорма</CommonForm>
+			<Constant>АдресСервера</Constant>
+			<CommonForm>Основная</CommonForm>
 			<CommonForm>ФормаКонстант</CommonForm>
-			<CommonForm>ФормаТест</CommonForm>
+			<CommonForm>ЗаявкиПринятые</CommonForm>
+			<CommonForm>ЗаявкиПереданные</CommonForm>
 			<Enum>ВидыКонтактнойИнформации</Enum>
-			<Enum>СостояниеЗаявки</Enum>
+			<Enum>СостояниеЗаявкиПереданные</Enum>
+			<Enum>СостояниеЗаявкиПринятые</Enum>
 			<InformationRegister>РММ</InformationRegister>
 			<InformationRegister>ЗаявкиПереданные</InformationRegister>
+			<InformationRegister>ЗаявкиПринятые</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
