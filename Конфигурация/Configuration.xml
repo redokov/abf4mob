@@ -28,11 +28,11 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>МобильноеМестоВнедренца</Name>
+			<Name>МобильноеАРМВнедренца</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Мобильное место внедренца</v8:content>
+					<v8:content>Мобильное АРМ Внедренца</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -97,10 +97,15 @@
 			<BriefInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Мобильное рабочее место внедренца</v8:content>
+					<v8:content>Мобильное АРМ внедренца</v8:content>
 				</v8:item>
 			</BriefInformation>
-			<DetailedInformation/>
+			<DetailedInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение для мобильных устройств. обменивается данными по заявкам с АБФ.</v8:content>
+				</v8:item>
+			</DetailedInformation>
 			<Copyright>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
