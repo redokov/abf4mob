@@ -62,17 +62,9 @@
 				<ExtendedTooltip name="ЗаявкиSearchControlExtendedTooltip" id="55"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="Состояние" id="5">
-					<DataPath>Заявки.Состояние</DataPath>
-					<ContextMenu name="СостояниеКонтекстноеМеню" id="6"/>
-					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="7"/>
-					<Events>
-						<Event name="OnChange">СостояниеПриИзменении</Event>
-						<Event name="Click">СостояниеНажатие</Event>
-					</Events>
-				</LabelField>
 				<LabelField name="Заявка" id="14">
 					<DataPath>Заявки.Заявка</DataPath>
+					<Width>20</Width>
 					<ContextMenu name="ЗаявкаКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="16"/>
 				</LabelField>
@@ -81,16 +73,29 @@
 					<ChildItems>
 						<LabelField name="Контрагент" id="17">
 							<DataPath>Заявки.Контрагент</DataPath>
+							<Width>10</Width>
 							<ContextMenu name="КонтрагентКонтекстноеМеню" id="18"/>
 							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="19"/>
 						</LabelField>
 						<LabelField name="КонтактноеЛицо" id="20">
 							<DataPath>Заявки.КонтактноеЛицо</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контакт:</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="21"/>
 							<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="22"/>
 						</LabelField>
 						<LabelField name="СрокИсполнения" id="26">
 							<DataPath>Заявки.СрокИсполнения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исполнить к:</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="27"/>
 							<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="28"/>
 						</LabelField>
@@ -98,6 +103,7 @@
 				</ColumnGroup>
 				<LabelField name="КонтактнаяИнформация" id="38">
 					<DataPath>Заявки.КонтактнаяИнформация</DataPath>
+					<Width>10</Width>
 					<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="40"/>
 				</LabelField>
@@ -106,11 +112,19 @@
 					<ChildItems>
 						<LabelField name="Адрес" id="35">
 							<DataPath>Заявки.Адрес</DataPath>
+							<Width>8</Width>
 							<ContextMenu name="АдресКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="37"/>
 						</LabelField>
 						<LabelField name="МаршрутПроезда" id="29">
 							<DataPath>Заявки.МаршрутПроезда</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Маршрут:</v8:content>
+								</v8:item>
+							</Title>
+							<Width>8</Width>
 							<ContextMenu name="МаршрутПроездаКонтекстноеМеню" id="30"/>
 							<ExtendedTooltip name="МаршрутПроездаРасширеннаяПодсказка" id="31"/>
 						</LabelField>
@@ -124,13 +138,25 @@
 				<ColumnGroup name="Группа1" id="41">
 					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="42"/>
 					<ChildItems>
+						<LabelField name="Состояние" id="5">
+							<DataPath>Заявки.Состояние</DataPath>
+							<Width>7</Width>
+							<ContextMenu name="СостояниеКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="7"/>
+							<Events>
+								<Event name="OnChange">СостояниеПриИзменении</Event>
+								<Event name="Click">СостояниеНажатие</Event>
+							</Events>
+						</LabelField>
 						<LabelField name="Номер" id="11">
 							<DataPath>Заявки.Номер</DataPath>
+							<Width>7</Width>
 							<ContextMenu name="НомерКонтекстноеМеню" id="12"/>
 							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="13"/>
 						</LabelField>
 						<LabelField name="Дата" id="8">
 							<DataPath>Заявки.Дата</DataPath>
+							<Width>7</Width>
 							<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="10"/>
 						</LabelField>

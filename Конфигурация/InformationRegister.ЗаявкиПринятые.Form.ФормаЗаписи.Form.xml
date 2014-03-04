@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="37">
@@ -60,6 +61,31 @@
 			<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
 			<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
 		</InputField>
+		<UsualGroup name="Группа2" id="46">
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<Button name="ЗаписатьИЗакрыть" id="42">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="43"/>
+				</Button>
+				<Button name="ВвестиСобытие" id="48">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВвестиСобытие</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ВвестиСобытиеРасширеннаяПодсказка" id="49"/>
+				</Button>
+				<Button name="Закрыть" id="44">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="45"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">
@@ -70,4 +96,21 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ВвестиСобытие" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Событие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести событие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВвестиСобытие</Action>
+		</Command>
+	</Commands>
 </Form>
