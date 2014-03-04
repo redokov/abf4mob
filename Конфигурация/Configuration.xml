@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>1С-Архитектор бизнеса</Vendor>
-			<Version>1.1.07</Version>
+			<Version>1.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -103,7 +103,7 @@
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Приложение для мобильных устройств. обменивается данными по заявкам с АБФ.</v8:content>
+					<v8:content>Мобильное автоматизированное рабочее место внедренца. Автоматизирует работу заявкам в производстви из АБФ.</v8:content>
 				</v8:item>
 			</DetailedInformation>
 			<Copyright>
