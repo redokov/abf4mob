@@ -114,18 +114,6 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="4a17a7ba-24b6-4e9b-8ba3-113110a03d4a">
-				<Properties>
-					<Name>Отработана</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отработана</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>
