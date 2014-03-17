@@ -1,6 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>ListSettings</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+		<ExcludedCommand>CancelSearch</ExcludedCommand>
+		<ExcludedCommand>OutputList</ExcludedCommand>
+		<ExcludedCommand>Find</ExcludedCommand>
+		<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+		<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>SetDateInterval</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
@@ -51,31 +74,45 @@
 			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
 			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
 				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокОбновить" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокОбновитьРасширеннаяПодсказка" id="35"/>
+					</Button>
+					<Button name="СписокУдалить" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Список.StandardCommand.Delete</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="СписокУдалитьРасширеннаяПодсказка" id="33"/>
+					</Button>
+				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
-			<SearchStringAddition name="СписокSearchString" id="32">
+			<SearchStringAddition name="СписокSearchString" id="36">
 				<Source>
 					<lf:elementId>3</lf:elementId>
 					<lf:additionId>0</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchStringContextMenu" id="33"/>
-				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="34"/>
+				<ContextMenu name="СписокSearchStringContextMenu" id="37"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="38"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокViewStatus" id="35">
+			<ViewStatusAddition name="СписокViewStatus" id="39">
 				<Source>
 					<lf:elementId>3</lf:elementId>
 					<lf:additionId>1</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокViewStatusContextMenu" id="36"/>
-				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="37"/>
+				<ContextMenu name="СписокViewStatusContextMenu" id="40"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="41"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокSearchControl" id="38">
+			<SearchControlAddition name="СписокSearchControl" id="42">
 				<Source>
 					<lf:elementId>3</lf:elementId>
 					<lf:additionId>2</lf:additionId>
 				</Source>
-				<ContextMenu name="СписокSearchControlContextMenu" id="39"/>
-				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="40"/>
+				<ContextMenu name="СписокSearchControlContextMenu" id="43"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="44"/>
 			</SearchControlAddition>
 			<ChildItems>
 				<ColumnGroup name="Группа1" id="22">
