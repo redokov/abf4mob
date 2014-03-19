@@ -12,6 +12,9 @@
 		<InputField name="Пароль" id="4">
 			<DataPath>НаборКонстант.Пароль</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<Width>10</Width>
+			<PasswordMode>false</PasswordMode>
+			<ClearButton>true</ClearButton>
 			<ContextMenu name="ПарольКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="6"/>
 		</InputField>
@@ -19,6 +22,7 @@
 			<DataPath>НаборКонстант.АдресСервера</DataPath>
 			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
 			<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+			<Width>30</Width>
 			<DropListButton>false</DropListButton>
 			<ChoiceButton>false</ChoiceButton>
 			<ClearButton>true</ClearButton>
@@ -89,6 +93,19 @@
 							</v8:item>
 						</Presentation>
 						<Value xsi:type="xs:string">172.16.4.172/abf4mobSRV</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>pav-oper</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">a.1ab.ru/pav-oper82</Value>
 					</xr:Value>
 				</xr:Item>
 			</ChoiceList>
