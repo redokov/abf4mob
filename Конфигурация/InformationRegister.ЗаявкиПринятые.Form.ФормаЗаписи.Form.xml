@@ -5,6 +5,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="37">
+			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
@@ -16,23 +17,29 @@
 				</InputField>
 				<InputField name="СрокИсполнения" id="22">
 					<DataPath>Запись.СрокИсполнения</DataPath>
+					<Enabled>false</Enabled>
 					<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="24"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Контрагент" id="13">
-			<DataPath>Запись.Контрагент</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
-		</InputField>
-		<InputField name="КонтактноеЛицо" id="16">
-			<DataPath>Запись.КонтактноеЛицо</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
-		</InputField>
+		<UsualGroup name="Группа3" id="53">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="КонтактноеЛицо" id="16">
+					<DataPath>Запись.КонтактноеЛицо</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Контрагент" id="13">
+					<DataPath>Запись.Контрагент</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Заявка" id="39">
 			<DataPath>Запись.Заявка</DataPath>
 			<ReadOnly>true</ReadOnly>
@@ -45,6 +52,12 @@
 			<ReadOnly>true</ReadOnly>
 			<ContextMenu name="МетроКонтекстноеМеню" id="29"/>
 			<ExtendedTooltip name="МетроРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="МаршрутПроезда" id="50">
+			<DataPath>Запись.МаршрутПроезда</DataPath>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="МаршрутПроездаКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="МаршрутПроездаРасширеннаяПодсказка" id="52"/>
 		</InputField>
 		<InputField name="Адрес" id="31">
 			<DataPath>Запись.Адрес</DataPath>
