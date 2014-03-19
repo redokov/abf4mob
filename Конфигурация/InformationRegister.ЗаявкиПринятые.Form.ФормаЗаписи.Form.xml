@@ -55,6 +55,7 @@
 		</InputField>
 		<InputField name="МаршрутПроезда" id="50">
 			<DataPath>Запись.МаршрутПроезда</DataPath>
+			<ReadOnly>true</ReadOnly>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="МаршрутПроездаКонтекстноеМеню" id="51"/>
 			<ExtendedTooltip name="МаршрутПроездаРасширеннаяПодсказка" id="52"/>
