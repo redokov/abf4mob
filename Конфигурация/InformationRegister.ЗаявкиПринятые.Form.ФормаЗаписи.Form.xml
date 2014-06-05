@@ -4,93 +4,110 @@
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<UsualGroup name="Группа1" id="37">
-			<Group>Horizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+		<Pages name="Группа3" id="55">
+			<Width>30</Width>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="56"/>
 			<ChildItems>
-				<InputField name="Состояние" id="1">
-					<DataPath>Запись.Состояние</DataPath>
-					<ContextMenu name="СостояниеКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="3"/>
-				</InputField>
-				<InputField name="СрокИсполнения" id="22">
-					<DataPath>Запись.СрокИсполнения</DataPath>
-					<Enabled>false</Enabled>
-					<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="24"/>
-				</InputField>
+				<Page name="Группа1" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявка</v8:content>
+						</v8:item>
+					</Title>
+					<Width>30</Width>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="СрокИсполнения" id="22">
+							<DataPath>Запись.СрокИсполнения</DataPath>
+							<Enabled>false</Enabled>
+							<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="Контрагент" id="13">
+							<DataPath>Запись.Контрагент</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Width>1</Width>
+							<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="КонтактноеЛицо" id="16">
+							<DataPath>Запись.КонтактноеЛицо</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Width>3</Width>
+							<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="Заявка" id="39">
+							<DataPath>Запись.Заявка</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Width>5</Width>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ЗаявкаКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="41"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проезд</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<InputField name="Метро" id="28">
+							<DataPath>Запись.Метро</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Width>5</Width>
+							<ContextMenu name="МетроКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="МетроРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="МаршрутПроезда" id="50">
+							<DataPath>Запись.МаршрутПроезда</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Width>5</Width>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="МаршрутПроездаКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="МаршрутПроездаРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<InputField name="Адрес" id="31">
+							<DataPath>Запись.Адрес</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="АдресКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="КонтактнаяИнформация" id="34">
+							<DataPath>Запись.КонтактнаяИнформация</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
+						</InputField>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа3" id="53">
-			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="54"/>
-			<ChildItems>
-				<InputField name="КонтактноеЛицо" id="16">
-					<DataPath>Запись.КонтактноеЛицо</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
-				</InputField>
-				<InputField name="Контрагент" id="13">
-					<DataPath>Запись.Контрагент</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<InputField name="Заявка" id="39">
-			<DataPath>Запись.Заявка</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<MultiLine>true</MultiLine>
-			<ContextMenu name="ЗаявкаКонтекстноеМеню" id="40"/>
-			<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="41"/>
-		</InputField>
-		<InputField name="Метро" id="28">
-			<DataPath>Запись.Метро</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<ContextMenu name="МетроКонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="МетроРасширеннаяПодсказка" id="30"/>
-		</InputField>
-		<InputField name="МаршрутПроезда" id="50">
-			<DataPath>Запись.МаршрутПроезда</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<MultiLine>true</MultiLine>
-			<ContextMenu name="МаршрутПроездаКонтекстноеМеню" id="51"/>
-			<ExtendedTooltip name="МаршрутПроездаРасширеннаяПодсказка" id="52"/>
-		</InputField>
-		<InputField name="Адрес" id="31">
-			<DataPath>Запись.Адрес</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
-			<MultiLine>true</MultiLine>
-			<ContextMenu name="АдресКонтекстноеМеню" id="32"/>
-			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="33"/>
-		</InputField>
-		<InputField name="КонтактнаяИнформация" id="34">
-			<DataPath>Запись.КонтактнаяИнформация</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<MultiLine>true</MultiLine>
-			<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
-			<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
-		</InputField>
+		</Pages>
 		<UsualGroup name="Группа2" id="46">
+			<Width>30</Width>
 			<Group>Horizontal</Group>
 			<Representation>StrongSeparation</Representation>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="47"/>
 			<ChildItems>
-				<Button name="ЗаписатьИЗакрыть" id="42">
-					<Type>UsualButton</Type>
-					<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="43"/>
-				</Button>
 				<Button name="ВвестиСобытие" id="48">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ВвестиСобытие</CommandName>
 					<Parameter xsi:nil="true"/>
 					<ExtendedTooltip name="ВвестиСобытиеРасширеннаяПодсказка" id="49"/>
+				</Button>
+				<Button name="ВвестиНЗ" id="61">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВвестиНЗ</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ВвестиНЗРасширеннаяПодсказка" id="62"/>
 				</Button>
 				<Button name="Закрыть" id="44">
 					<Type>UsualButton</Type>
@@ -125,6 +142,20 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВвестиСобытие</Action>
+		</Command>
+		<Command name="ВвестиНЗ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести НЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести НЗ</v8:content>
+				</v8:item>
+			</ToolTip>
 		</Command>
 	</Commands>
 </Form>
