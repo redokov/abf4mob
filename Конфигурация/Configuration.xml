@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>1С-Архитектор бизнеса</Vendor>
-			<Version>2.0.3</Version>
+			<Version>2.1.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -142,6 +142,7 @@
 			<CommonForm>ФормаКонстант</CommonForm>
 			<CommonForm>ЗаявкиПринятые</CommonForm>
 			<CommonForm>ЗаявкиПереданные</CommonForm>
+			<CommonForm>ОсновнаяН</CommonForm>
 			<Enum>ВидыКонтактнойИнформации</Enum>
 			<Enum>СостояниеЗаявкиПереданные</Enum>
 			<Enum>СостояниеЗаявкиПринятые</Enum>
