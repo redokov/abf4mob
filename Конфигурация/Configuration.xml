@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>1С-Архитектор бизнеса</Vendor>
-			<Version>2.1.0</Version>
+			<Version>2.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -80,7 +80,7 @@
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Telephony</v8:Key>
-					<v8:Value xsi:type="xs:boolean">false</v8:Value>
+					<v8:Value xsi:type="xs:boolean">true</v8:Value>
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">PushNotification</v8:Key>
