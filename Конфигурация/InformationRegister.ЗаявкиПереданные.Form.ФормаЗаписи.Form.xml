@@ -42,6 +42,7 @@
 						<InputField name="Заявка" id="39">
 							<DataPath>Запись.Заявка</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="ЗаявкаКонтекстноеМеню" id="40"/>
 							<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="41"/>
@@ -66,18 +67,20 @@
 						<InputField name="Адрес" id="31">
 							<DataPath>Запись.Адрес</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
 							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
 							<MultiLine>true</MultiLine>
 							<ContextMenu name="АдресКонтекстноеМеню" id="32"/>
 							<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="33"/>
 						</InputField>
-						<InputField name="КонтактнаяИнформация" id="34">
+						<HTMLDocumentField name="КонтактнаяИнформация" id="34">
 							<DataPath>Запись.КонтактнаяИнформация</DataPath>
 							<ReadOnly>true</ReadOnly>
-							<MultiLine>true</MultiLine>
+							<TitleLocation>None</TitleLocation>
+							<Height>3</Height>
 							<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
 							<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
-						</InputField>
+						</HTMLDocumentField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
