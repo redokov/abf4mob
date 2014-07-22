@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
-	<CommandBarLocation>None</CommandBarLocation>
+	<AutoTitle>false</AutoTitle>
+	<AutoFillCheck>false</AutoFillCheck>
+	<CommandBarLocation>Top</CommandBarLocation>
 	<CommandSet>
 		<ExcludedCommand>No</ExcludedCommand>
 		<ExcludedCommand>CustomizeForm</ExcludedCommand>
@@ -21,27 +23,52 @@
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="13">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ок</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="14"/>
+			</Button>
+			<Button name="ФормаЗаявкаОтработана" id="41">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаявкаОтработана</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заявка отработана?</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаявкаОтработанаРасширеннаяПодсказка" id="42"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="43">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="44"/>
+			</Button>
+		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<CheckBoxField name="ВыездВнедренца" id="10">
-			<DataPath>Запись.ВыездВнедренца</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заявка отработана</v8:content>
-				</v8:item>
-			</Title>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ВыездВнедренцаКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ВыездВнедренцаРасширеннаяПодсказка" id="12"/>
-			<Events>
-				<Event name="OnChange">ВыездВнедренцаПриИзменении</Event>
-			</Events>
-		</CheckBoxField>
 		<Pages name="грЗапись" id="19">
 			<Title>
 				<v8:item>
@@ -56,6 +83,8 @@
 				</v8:item>
 			</ToolTip>
 			<Width>30</Width>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
 			<ExtendedTooltip name="грЗаписьРасширеннаяПодсказка" id="20"/>
 			<ChildItems>
 				<Page name="стрЧтоСделано" id="21">
@@ -71,6 +100,9 @@
 							<v8:content>Стр что сделано</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Width>30</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="стрЧтоСделаноРасширеннаяПодсказка" id="22"/>
 					<ChildItems>
 						<InputField name="ЧтоСделано" id="7">
@@ -81,7 +113,7 @@
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>
 							<MultiLine>true</MultiLine>
-							<ClearButton>true</ClearButton>
+							<ClearButton>false</ClearButton>
 							<ContextMenu name="ЧтоСделаноКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ЧтоСделаноРасширеннаяПодсказка" id="9"/>
 						</InputField>
@@ -100,18 +132,40 @@
 							<v8:content>Стр договоренности</v8:content>
 						</v8:item>
 					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="стрДоговоренностиРасширеннаяПодсказка" id="24"/>
 					<ChildItems>
 						<InputField name="Договоренности" id="25">
 							<DataPath>Запись.Договоренности</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<ClearButton>true</ClearButton>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ClearButton>false</ClearButton>
 							<ContextMenu name="ДоговоренностиКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="ДоговоренностиРасширеннаяПодсказка" id="27"/>
 						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="стрПлан2" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>План+</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стр план2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ExtendedTooltip name="стрПлан2РасширеннаяПодсказка" id="40"/>
+					<ChildItems>
 						<InputField name="ДоговоренностиДата" id="33">
 							<DataPath>Запись.ДоговоренностиДата</DataPath>
-							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -119,6 +173,7 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>Left</TitleLocation>
+							<Width>15</Width>
 							<MultiLine>false</MultiLine>
 							<EditFormat>
 								<v8:item>
@@ -131,7 +186,6 @@
 						</InputField>
 						<InputField name="ДоговоренностиПланЧасов" id="36">
 							<DataPath>Запись.ДоговоренностиПланЧасов</DataPath>
-							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -139,6 +193,9 @@
 								</v8:item>
 							</Title>
 							<TitleLocation>Left</TitleLocation>
+							<Width>15</Width>
+							<ChoiceButton>true</ChoiceButton>
+							<ChooseType>false</ChooseType>
 							<ContextMenu name="ДоговоренностиПланЧасовКонтекстноеМеню" id="37"/>
 							<ExtendedTooltip name="ДоговоренностиПланЧасовРасширеннаяПодсказка" id="38"/>
 						</InputField>
@@ -157,12 +214,16 @@
 							<v8:content>Стр задачи ОП</v8:content>
 						</v8:item>
 					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="стрЗадачиОПРасширеннаяПодсказка" id="29"/>
 					<ChildItems>
 						<InputField name="ЗадачиОтделуПродаж" id="30">
 							<DataPath>Запись.ЗадачиОтделуПродаж</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<ClearButton>true</ClearButton>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ClearButton>false</ClearButton>
 							<ContextMenu name="ЗадачиОтделуПродажКонтекстноеМеню" id="31"/>
 							<ExtendedTooltip name="ЗадачиОтделуПродажРасширеннаяПодсказка" id="32"/>
 						</InputField>
@@ -170,37 +231,6 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-		<UsualGroup name="ЭлементыУправления" id="17">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Элементы управления</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Элементы управления</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Horizontal</Group>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ЭлементыУправленияРасширеннаяПодсказка" id="18"/>
-			<ChildItems>
-				<Button name="ФормаЗаписатьИЗакрыть" id="13">
-					<Type>UsualButton</Type>
-					<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="14"/>
-				</Button>
-				<Button name="Закрыть" id="15">
-					<Type>UsualButton</Type>
-					<CommandName>Form.StandardCommand.Close</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="16"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Запись" id="1">
@@ -211,4 +241,21 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗаявкаОтработана" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявка отработана</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявка отработана</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаявкаОтработана</Action>
+		</Command>
+	</Commands>
 </Form>
