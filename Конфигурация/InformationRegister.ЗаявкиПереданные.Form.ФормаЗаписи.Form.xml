@@ -3,6 +3,9 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
 	<ChildItems>
 		<Pages name="Группа1" id="50">
 			<Width>25</Width>
@@ -39,14 +42,13 @@
 							<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
 						</InputField>
-						<InputField name="Заявка" id="39">
-							<DataPath>Запись.Заявка</DataPath>
+						<HTMLDocumentField name="Заявка" id="39">
+							<DataPath>ТекстЗаявки</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
-							<MultiLine>true</MultiLine>
 							<ContextMenu name="ЗаявкаКонтекстноеМеню" id="40"/>
 							<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="41"/>
-						</InputField>
+						</HTMLDocumentField>
 					</ChildItems>
 				</Page>
 				<Page name="Группа4" id="54">
@@ -64,20 +66,10 @@
 							<ContextMenu name="МетроКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="МетроРасширеннаяПодсказка" id="30"/>
 						</InputField>
-						<InputField name="Адрес" id="31">
-							<DataPath>Запись.Адрес</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<TitleLocation>None</TitleLocation>
-							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
-							<MultiLine>true</MultiLine>
-							<ContextMenu name="АдресКонтекстноеМеню" id="32"/>
-							<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="33"/>
-						</InputField>
 						<HTMLDocumentField name="КонтактнаяИнформация" id="34">
-							<DataPath>Запись.КонтактнаяИнформация</DataPath>
+							<DataPath>ТекстПроезда</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
-							<Height>3</Height>
 							<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
 							<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
 						</HTMLDocumentField>
@@ -89,13 +81,18 @@
 			<Width>30</Width>
 			<Group>Horizontal</Group>
 			<Representation>StrongSeparation</Representation>
-			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="43"/>
 			<ChildItems>
 				<Button name="ЗаписатьИЗакрыть" id="44">
 					<Type>UsualButton</Type>
 					<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
 					<Parameter xsi:nil="true"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ок</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="45"/>
 				</Button>
 				<Button name="ВвестиСобытие" id="48">
@@ -103,6 +100,12 @@
 					<CommandName>Form.Command.ВвестиСобытие</CommandName>
 					<Parameter xsi:nil="true"/>
 					<ExtendedTooltip name="ВвестиСобытиеРасширеннаяПодсказка" id="49"/>
+				</Button>
+				<Button name="Закрыть" id="56">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<Parameter xsi:nil="true"/>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="57"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -114,6 +117,24 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТекстЗаявки" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстПроезда" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
