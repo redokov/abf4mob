@@ -138,7 +138,7 @@
 			<Constant>Пользователь</Constant>
 			<Constant>Пароль</Constant>
 			<Constant>АдресСервера</Constant>
-			<CommonForm>Основная</CommonForm>
+			<CommonForm>НеИспользуетсяОсновная</CommonForm>
 			<CommonForm>ФормаКонстант</CommonForm>
 			<CommonForm>ЗаявкиПринятые</CommonForm>
 			<CommonForm>ЗаявкиПереданные</CommonForm>
