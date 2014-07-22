@@ -3,7 +3,7 @@
 	<WorkingAreaTemplate>OneColumn</WorkingAreaTemplate>
 	<Column>
 		<Item>
-			<Form>CommonForm.ОсновнаяН</Form>
+			<Form>CommonForm.Основная</Form>
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>

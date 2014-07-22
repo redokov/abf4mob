@@ -142,7 +142,7 @@
 			<CommonForm>ФормаКонстант</CommonForm>
 			<CommonForm>ЗаявкиПринятые</CommonForm>
 			<CommonForm>ЗаявкиПереданные</CommonForm>
-			<CommonForm>ОсновнаяН</CommonForm>
+			<CommonForm>Основная</CommonForm>
 			<Enum>ВидыКонтактнойИнформации</Enum>
 			<Enum>СостояниеЗаявкиПереданные</Enum>
 			<Enum>СостояниеЗаявкиПринятые</Enum>

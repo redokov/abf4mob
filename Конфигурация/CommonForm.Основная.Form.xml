@@ -25,8 +25,12 @@
 					<v8:content>Заявки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<Width>30</Width>
 			<ExtendedTooltip name="ЗаявкиРасширеннаяПодсказка" id="64"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ЗаявкиПриСменеСтраницы</Event>
+			</Events>
 			<ChildItems>
 				<Page name="стрЗаявкиПринятые" id="120">
 					<Title>
@@ -38,16 +42,18 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Стр заявки принятые</v8:content>
+							<v8:content>Заявки принятые</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Width>30</Width>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
 					<ExtendedTooltip name="стрЗаявкиПринятыеРасширеннаяПодсказка" id="121"/>
 					<ChildItems>
 						<Table name="ЗаявкиПринятые" id="65">
 							<CommandBarLocation>None</CommandBarLocation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<HeightInTableRows>10</HeightInTableRows>
+							<HeightInTableRows>5</HeightInTableRows>
 							<Header>false</Header>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -94,7 +100,6 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="OnActivateRow">СписокЗаявокПриАктивизацииПоля</Event>
-								<Event name="ChoiceProcessing">ЗаявкиПринятыеОбработкаВыбора</Event>
 							</Events>
 							<ChildItems>
 								<LabelField name="СрокИсполнения" id="105">
@@ -150,9 +155,11 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Стр заявки переданные</v8:content>
+							<v8:content>Заявки переданные</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Width>30</Width>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
 					<ExtendedTooltip name="стрЗаявкиПереданныеРасширеннаяПодсказка" id="123"/>
 					<ChildItems>
 						<Table name="ЗаявкиПереданные" id="124">
@@ -160,7 +167,7 @@
 							<ReadOnly>true</ReadOnly>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
-							<HeightInTableRows>10</HeightInTableRows>
+							<HeightInTableRows>5</HeightInTableRows>
 							<Header>false</Header>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -264,63 +271,34 @@
 					<v8:content>Описание заявки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
 			<Width>20</Width>
 			<Height>4</Height>
 			<MultiLine>true</MultiLine>
+			<ChooseType>false</ChooseType>
+			<TextEdit>false</TextEdit>
 			<ContextMenu name="ЗаявкаКонтекстноеМеню" id="45"/>
 			<ExtendedTooltip name="ЗаявкаРасширеннаяПодсказка" id="46"/>
 		</InputField>
-		<UsualGroup name="грКонтакты" id="59">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Контакты</v8:content>
-				</v8:item>
-			</Title>
+		<HTMLDocumentField name="КонтактнаяИнформация" id="50">
+			<DataPath>КонтактнаяИнформация</DataPath>
+			<TitleLocation>None</TitleLocation>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Гр контакты</v8:content>
+					<v8:content>Контактная информация</v8:content>
 				</v8:item>
 			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
 			<Width>20</Width>
-			<ExtendedTooltip name="грКонтактыРасширеннаяПодсказка" id="60"/>
-			<ChildItems>
-				<LabelField name="КонтактноеЛицо" id="47">
-					<DataPath>КонтактноеЛицо</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<TitleLocation>None</TitleLocation>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Контактное лицо</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ToolTipRepresentation>Button</ToolTipRepresentation>
-					<Width>20</Width>
-					<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="49"/>
-				</LabelField>
-				<InputField name="КонтактнаяИнформация" id="50">
-					<DataPath>КонтактнаяИнформация</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<TitleLocation>None</TitleLocation>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Контактная информация</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ToolTipRepresentation>Button</ToolTipRepresentation>
-					<Width>20</Width>
-					<Height>4</Height>
-					<MultiLine>true</MultiLine>
-					<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="51"/>
-					<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="52"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
+			<Height>5</Height>
+			<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="52"/>
+			<Events>
+				<Event name="OnClick">КонтактнаяИнформацияПриНажатии</Event>
+			</Events>
+		</HTMLDocumentField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Заявка" id="2">
