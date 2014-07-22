@@ -33,26 +33,26 @@
 					<Width>30</Width>
 					<ExtendedTooltip name="грЗаявкаРасширеннаяПодсказка" id="54"/>
 					<ChildItems>
-						<InputField name="СрокИсполнения" id="22">
+						<LabelField name="СрокИсполнения" id="22">
 							<DataPath>Запись.СрокИсполнения</DataPath>
 							<Enabled>false</Enabled>
 							<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="24"/>
-						</InputField>
-						<InputField name="Контрагент" id="13">
+						</LabelField>
+						<LabelField name="Контрагент" id="13">
 							<DataPath>Запись.Контрагент</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<Width>1</Width>
 							<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
-						</InputField>
-						<InputField name="КонтактноеЛицо" id="16">
+						</LabelField>
+						<LabelField name="КонтактноеЛицо" id="16">
 							<DataPath>Запись.КонтактноеЛицо</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<Width>3</Width>
 							<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
-						</InputField>
+						</LabelField>
 						<HTMLDocumentField name="Заявка" id="39">
 							<DataPath>ТекстЗаявки</DataPath>
 							<ReadOnly>true</ReadOnly>
@@ -77,13 +77,13 @@
 					</ToolTip>
 					<ExtendedTooltip name="грКонтактРасширеннаяПодсказка" id="60"/>
 					<ChildItems>
-						<InputField name="Метро" id="28">
+						<LabelField name="Метро" id="28">
 							<DataPath>Запись.Метро</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<Width>5</Width>
 							<ContextMenu name="МетроКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="МетроРасширеннаяПодсказка" id="30"/>
-						</InputField>
+						</LabelField>
 						<HTMLDocumentField name="КонтактнаяИнформация" id="34">
 							<DataPath>ТекстПроезд</DataPath>
 							<ReadOnly>true</ReadOnly>
