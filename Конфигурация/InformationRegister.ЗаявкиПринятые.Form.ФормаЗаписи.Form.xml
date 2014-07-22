@@ -7,19 +7,31 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
-		<Pages name="Группа3" id="55">
+		<Pages name="грЭлементы" id="55">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр элементы</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Width>30</Width>
-			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="56"/>
+			<ExtendedTooltip name="грЭлементыРасширеннаяПодсказка" id="56"/>
 			<ChildItems>
-				<Page name="Группа1" id="53">
+				<Page name="грЗаявка" id="53">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Заявка</v8:content>
 						</v8:item>
 					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр заявка</v8:content>
+						</v8:item>
+					</ToolTip>
 					<Width>30</Width>
-					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="54"/>
+					<ExtendedTooltip name="грЗаявкаРасширеннаяПодсказка" id="54"/>
 					<ChildItems>
 						<InputField name="СрокИсполнения" id="22">
 							<DataPath>Запись.СрокИсполнения</DataPath>
@@ -50,14 +62,20 @@
 						</HTMLDocumentField>
 					</ChildItems>
 				</Page>
-				<Page name="Группа5" id="59">
+				<Page name="грКонтакт" id="59">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Проезд</v8:content>
+							<v8:content>Контакт</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="60"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр контакт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грКонтактРасширеннаяПодсказка" id="60"/>
 					<ChildItems>
 						<InputField name="Метро" id="28">
 							<DataPath>Запись.Метро</DataPath>
@@ -77,11 +95,17 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-		<UsualGroup name="Группа2" id="46">
+		<UsualGroup name="грКнопки" id="46">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Width>30</Width>
 			<Group>Horizontal</Group>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="47"/>
+			<ExtendedTooltip name="грКнопкиРасширеннаяПодсказка" id="47"/>
 			<ChildItems>
 				<Button name="ВвестиСобытие" id="48">
 					<Type>UsualButton</Type>
