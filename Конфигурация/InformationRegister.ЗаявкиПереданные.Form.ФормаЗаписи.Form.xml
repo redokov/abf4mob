@@ -7,18 +7,30 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
-		<Pages name="Группа1" id="50">
+		<Pages name="грЭлементы" id="50">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр элементы</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Width>25</Width>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+			<ExtendedTooltip name="грЭлементыРасширеннаяПодсказка" id="51"/>
 			<ChildItems>
-				<Page name="Группа3" id="52">
+				<Page name="грЗаявка" id="52">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Заявка</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="53"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр заявка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грЗаявкаРасширеннаяПодсказка" id="53"/>
 					<ChildItems>
 						<InputField name="Состояние" id="1">
 							<DataPath>Запись.Состояние</DataPath>
@@ -51,14 +63,20 @@
 						</HTMLDocumentField>
 					</ChildItems>
 				</Page>
-				<Page name="Группа4" id="54">
+				<Page name="грКонтакт" id="54">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Контакт</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="55"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр контакт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грКонтактРасширеннаяПодсказка" id="55"/>
 					<ChildItems>
 						<InputField name="Метро" id="28">
 							<DataPath>Запись.Метро</DataPath>
@@ -67,7 +85,7 @@
 							<ExtendedTooltip name="МетроРасширеннаяПодсказка" id="30"/>
 						</InputField>
 						<HTMLDocumentField name="КонтактнаяИнформация" id="34">
-							<DataPath>ТекстПроезда</DataPath>
+							<DataPath>ТекстПроезд</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
@@ -77,11 +95,17 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-		<UsualGroup name="Группа2" id="42">
+		<UsualGroup name="грКнопки" id="42">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Width>30</Width>
 			<Group>Horizontal</Group>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="43"/>
+			<ExtendedTooltip name="грКнопкиРасширеннаяПодсказка" id="43"/>
 			<ChildItems>
 				<Button name="ЗаписатьИЗакрыть" id="44">
 					<Type>UsualButton</Type>
@@ -127,7 +151,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТекстПроезда" id="3">
+		<Attribute name="ТекстПроезд" id="3">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
