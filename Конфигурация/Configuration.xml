@@ -130,6 +130,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>ОбменСАБФ</CommonModule>
+			<CommonModule>Гео</CommonModule>
 			<CommonCommand>ПолучитьЗаявки</CommonCommand>
 			<CommonCommand>ОтправитьЗаявкиНаСервер</CommonCommand>
 			<CommonCommand>ЗаявкиПринятые</CommonCommand>
@@ -138,10 +139,7 @@
 			<Constant>Пользователь</Constant>
 			<Constant>Пароль</Constant>
 			<Constant>АдресСервера</Constant>
-			<CommonForm>НеИспользуетсяОсновная</CommonForm>
 			<CommonForm>ФормаКонстант</CommonForm>
-			<CommonForm>ЗаявкиПринятые</CommonForm>
-			<CommonForm>ЗаявкиПереданные</CommonForm>
 			<CommonForm>Основная</CommonForm>
 			<Enum>ВидыКонтактнойИнформации</Enum>
 			<Enum>СостояниеЗаявкиПереданные</Enum>
@@ -149,6 +147,7 @@
 			<InformationRegister>ЗаявкиПереданные</InformationRegister>
 			<InformationRegister>ЗаявкиПринятые</InformationRegister>
 			<InformationRegister>События</InformationRegister>
+			<InformationRegister>НЗ</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
