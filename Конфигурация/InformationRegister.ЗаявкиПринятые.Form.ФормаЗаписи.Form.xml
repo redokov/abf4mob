@@ -5,6 +5,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<Pages name="грЭлементы" id="55">
@@ -86,11 +87,141 @@
 						</LabelField>
 						<HTMLDocumentField name="КонтактнаяИнформация" id="34">
 							<DataPath>ТекстПроезд</DataPath>
-							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
 							<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
+							<Events>
+								<Event name="OnClick">КонтактнаяИнформацияПриНажатии</Event>
+							</Events>
 						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="грНЗ" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НЗ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр НЗ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="грНЗРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<Table name="НЗ" id="65">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>НЗ</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>Refresh</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period xsi:type="v8:StandardPeriod">
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="НЗКонтекстноеМеню" id="66"/>
+							<AutoCommandBar name="НЗКоманднаяПанель" id="67">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="НЗСоздатьНЗ" id="112">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СоздатьНЗ</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="НЗСоздатьНЗРасширеннаяПодсказка" id="113"/>
+									</Button>
+									<Button name="НЗУдалить" id="110">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.НЗ.StandardCommand.Delete</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="НЗУдалитьРасширеннаяПодсказка" id="111"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НЗРасширеннаяПодсказка" id="68"/>
+							<SearchStringAddition name="НЗСтрокаПоиска" id="69">
+								<Source>
+									<lf:elementId>65</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="НЗСтрокаПоискаКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="НЗСтрокаПоискаРасширеннаяПодсказка" id="73"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НЗСостояниеПросмотра" id="74">
+								<Source>
+									<lf:elementId>65</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="НЗСостояниеПросмотраКонтекстноеМеню" id="77"/>
+								<ExtendedTooltip name="НЗСостояниеПросмотраРасширеннаяПодсказка" id="78"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НЗУправлениеПоиском" id="79">
+								<Source>
+									<lf:elementId>65</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="НЗУправлениеПоискомКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="НЗУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НЗДатаНЗ" id="102">
+									<DataPath>НЗ.ДатаНЗ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата:</v8:content>
+										</v8:item>
+									</Title>
+									<Width>3</Width>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="НЗДатаНЗКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="НЗДатаНЗРасширеннаяПодсказка" id="104"/>
+								</LabelField>
+								<LabelField name="НЗНомерНЗ" id="105">
+									<DataPath>НЗ.НомерНЗ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НЗНомерНЗКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="НЗНомерНЗРасширеннаяПодсказка" id="107"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -105,6 +236,7 @@
 			<Width>30</Width>
 			<Group>Horizontal</Group>
 			<Representation>StrongSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ExtendedTooltip name="грКнопкиРасширеннаяПодсказка" id="47"/>
 			<ChildItems>
 				<Button name="ВвестиСобытие" id="48">
@@ -112,12 +244,6 @@
 					<CommandName>Form.Command.ВвестиСобытие</CommandName>
 					<Parameter xsi:nil="true"/>
 					<ExtendedTooltip name="ВвестиСобытиеРасширеннаяПодсказка" id="49"/>
-				</Button>
-				<Button name="ВвестиНЗ" id="61">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ВвестиНЗ</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="ВвестиНЗРасширеннаяПодсказка" id="62"/>
 				</Button>
 				<Button name="Закрыть" id="44">
 					<Type>UsualButton</Type>
@@ -160,6 +286,47 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="НЗ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	НЗ.ДатаНЗ,
+	НЗ.НомерНЗ
+ИЗ
+	РегистрСведений.НЗ КАК НЗ
+ГДЕ
+	НЗ.ДатаЗаявки = &amp;ДатаЗаявки
+	И НЗ.НомерЗаявки = &amp;НомерЗаявки</QueryText>
+				<MainTable>InformationRegister.НЗ</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВвестиСобытие" id="1">
@@ -177,19 +344,24 @@
 			</ToolTip>
 			<Action>ВвестиСобытие</Action>
 		</Command>
-		<Command name="ВвестиНЗ" id="2">
+		<Command name="СоздатьНЗ" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ввести НЗ</v8:content>
+					<v8:content>Создать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ввести НЗ</v8:content>
+					<v8:content>Создать НЗ</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьНЗ</Action>
 		</Command>
 	</Commands>
 </Form>
