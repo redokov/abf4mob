@@ -124,23 +124,9 @@
 								</LabelField>
 								<LabelField name="Контрагент" id="96">
 									<DataPath>ЗаявкиПринятые.Контрагент</DataPath>
+									<Width>5</Width>
 									<ContextMenu name="КонтрагентКонтекстноеМеню" id="97"/>
 									<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="98"/>
-								</LabelField>
-								<LabelField name="Состояние" id="84">
-									<DataPath>ЗаявкиПринятые.Состояние</DataPath>
-									<ContextMenu name="СостояниеКонтекстноеМеню" id="85"/>
-									<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="86"/>
-								</LabelField>
-								<LabelField name="Дата" id="87">
-									<DataPath>ЗаявкиПринятые.Дата</DataPath>
-									<ContextMenu name="ДатаКонтекстноеМеню" id="88"/>
-									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="89"/>
-								</LabelField>
-								<LabelField name="Номер" id="90">
-									<DataPath>ЗаявкиПринятые.Номер</DataPath>
-									<ContextMenu name="НомерКонтекстноеМеню" id="91"/>
-									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="92"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -214,7 +200,8 @@
 								<ExtendedTooltip name="ЗаявкиПереданныеУправлениеПоискомРасширеннаяПодсказка" id="142"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="OnActivateField">СписокЗаявокПриАктивизацииПоля</Event>
+								<Event name="Selection">ЗаявкиПереданныеВыбор</Event>
+								<Event name="OnActivateRow">СписокЗаявокПриАктивизацииПоля</Event>
 							</Events>
 							<ChildItems>
 								<LabelField name="ЗаявкиПереданныеСрокИсполнения" id="158">
@@ -238,23 +225,9 @@
 								</LabelField>
 								<LabelField name="ЗаявкиПереданныеКонтрагент" id="155">
 									<DataPath>ЗаявкиПереданные.Контрагент</DataPath>
+									<Width>5</Width>
 									<ContextMenu name="ЗаявкиПереданныеКонтрагентКонтекстноеМеню" id="156"/>
 									<ExtendedTooltip name="ЗаявкиПереданныеКонтрагентРасширеннаяПодсказка" id="157"/>
-								</LabelField>
-								<LabelField name="ЗаявкиПереданныеСостояние" id="143">
-									<DataPath>ЗаявкиПереданные.Состояние</DataPath>
-									<ContextMenu name="ЗаявкиПереданныеСостояниеКонтекстноеМеню" id="144"/>
-									<ExtendedTooltip name="ЗаявкиПереданныеСостояниеРасширеннаяПодсказка" id="145"/>
-								</LabelField>
-								<LabelField name="ЗаявкиПереданныеДата" id="146">
-									<DataPath>ЗаявкиПереданные.Дата</DataPath>
-									<ContextMenu name="ЗаявкиПереданныеДатаКонтекстноеМеню" id="147"/>
-									<ExtendedTooltip name="ЗаявкиПереданныеДатаРасширеннаяПодсказка" id="148"/>
-								</LabelField>
-								<LabelField name="ЗаявкиПереданныеНомер" id="149">
-									<DataPath>ЗаявкиПереданные.Номер</DataPath>
-									<ContextMenu name="ЗаявкиПереданныеНомерКонтекстноеМеню" id="150"/>
-									<ExtendedTooltip name="ЗаявкиПереданныеНомерРасширеннаяПодсказка" id="151"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -307,10 +280,39 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>ЗаявкиПринятые.Адрес</Field>
+				<Field>ЗаявкиПринятые.Дата</Field>
+				<Field>ЗаявкиПринятые.Заявка</Field>
+				<Field>ЗаявкиПринятые.КонтактнаяИнформация</Field>
+				<Field>ЗаявкиПринятые.КонтактноеЛицо</Field>
+				<Field>ЗаявкиПринятые.Контрагент</Field>
+				<Field>ЗаявкиПринятые.МаршрутПроезда</Field>
+				<Field>ЗаявкиПринятые.Метро</Field>
+				<Field>ЗаявкиПринятые.Номер</Field>
+				<Field>ЗаявкиПринятые.Состояние</Field>
+				<Field>ЗаявкиПринятые.СрокИсполнения</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийЗаявкиПринятые.Состояние,
+	РегистрСведенийЗаявкиПринятые.Дата,
+	РегистрСведенийЗаявкиПринятые.Номер,
+	РегистрСведенийЗаявкиПринятые.Заявка,
+	РегистрСведенийЗаявкиПринятые.Контрагент,
+	РегистрСведенийЗаявкиПринятые.КонтактноеЛицо,
+	РегистрСведенийЗаявкиПринятые.ВерсияДанных,
+	РегистрСведенийЗаявкиПринятые.СрокИсполнения,
+	РегистрСведенийЗаявкиПринятые.МаршрутПроезда,
+	РегистрСведенийЗаявкиПринятые.Метро,
+	РегистрСведенийЗаявкиПринятые.Адрес,
+	РегистрСведенийЗаявкиПринятые.КонтактнаяИнформация
+ИЗ
+	РегистрСведений.ЗаявкиПринятые КАК РегистрСведенийЗаявкиПринятые</QueryText>
 				<MainTable>InformationRegister.ЗаявкиПринятые</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -339,10 +341,39 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>ЗаявкиПереданные.Адрес</Field>
+				<Field>ЗаявкиПереданные.Дата</Field>
+				<Field>ЗаявкиПереданные.Заявка</Field>
+				<Field>ЗаявкиПереданные.КонтактнаяИнформация</Field>
+				<Field>ЗаявкиПереданные.КонтактноеЛицо</Field>
+				<Field>ЗаявкиПереданные.Контрагент</Field>
+				<Field>ЗаявкиПереданные.МаршрутПроезда</Field>
+				<Field>ЗаявкиПереданные.Метро</Field>
+				<Field>ЗаявкиПереданные.Номер</Field>
+				<Field>ЗаявкиПереданные.Состояние</Field>
+				<Field>ЗаявкиПереданные.СрокИсполнения</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийЗаявкиПереданные.Состояние,
+	РегистрСведенийЗаявкиПереданные.Дата,
+	РегистрСведенийЗаявкиПереданные.Номер,
+	РегистрСведенийЗаявкиПереданные.Заявка,
+	РегистрСведенийЗаявкиПереданные.Контрагент,
+	РегистрСведенийЗаявкиПереданные.КонтактноеЛицо,
+	РегистрСведенийЗаявкиПереданные.ВерсияДанных,
+	РегистрСведенийЗаявкиПереданные.СрокИсполнения,
+	РегистрСведенийЗаявкиПереданные.МаршрутПроезда,
+	РегистрСведенийЗаявкиПереданные.Метро,
+	РегистрСведенийЗаявкиПереданные.Адрес,
+	РегистрСведенийЗаявкиПереданные.КонтактнаяИнформация
+ИЗ
+	РегистрСведений.ЗаявкиПереданные КАК РегистрСведенийЗаявкиПереданные</QueryText>
 				<MainTable>InformationRegister.ЗаявкиПереданные</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
