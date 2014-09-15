@@ -1,48 +1,48 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<InformationRegister uuid="e059f76b-393d-42db-ba34-14999e69146f">
+	<InformationRegister uuid="ec9f1ff0-17c9-48c4-85da-79401ed14c2e">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.НЗ" category="Record">
-				<xr:TypeId>a788dc2e-d5fe-415e-be87-29b8cc44fc3c</xr:TypeId>
-				<xr:ValueId>ce733e8e-b54a-431f-b76b-1ff089b37c90</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.СтрокиНЗ" category="Record">
+				<xr:TypeId>ea6c616c-7fdb-464e-a172-7a8cd97a99f1</xr:TypeId>
+				<xr:ValueId>a42faa7e-9838-49f1-bf67-068a578f2d83</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.НЗ" category="Manager">
-				<xr:TypeId>feed54c8-5be3-4a57-b32c-66b04a5fe233</xr:TypeId>
-				<xr:ValueId>935810df-4f8c-47c8-a507-f7ac2c772452</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.СтрокиНЗ" category="Manager">
+				<xr:TypeId>7bb94041-dd81-45ef-837c-b0589cddc2a4</xr:TypeId>
+				<xr:ValueId>42e59526-4ddb-411e-9844-c5108b00a6a9</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.НЗ" category="Selection">
-				<xr:TypeId>7064d1e0-5ad2-4a3e-8665-37d0aa09b309</xr:TypeId>
-				<xr:ValueId>27389ca4-b9fe-441e-ae39-2e4ac6102cd6</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.СтрокиНЗ" category="Selection">
+				<xr:TypeId>9bf0872f-be5c-4816-bebc-ead2b2d56c0e</xr:TypeId>
+				<xr:ValueId>34043a95-d2c5-4074-acb6-bf740b51ef69</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.НЗ" category="List">
-				<xr:TypeId>a8ed1982-a602-4308-a3fb-bec2652ff07d</xr:TypeId>
-				<xr:ValueId>06be60e2-9f8c-4e6b-a081-0a57c592f431</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.СтрокиНЗ" category="List">
+				<xr:TypeId>beba89e9-f4db-445e-8940-88eb814305c2</xr:TypeId>
+				<xr:ValueId>79a4f9ec-c1c4-438d-9ced-8ceb60ae3f30</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.НЗ" category="RecordSet">
-				<xr:TypeId>0e2d40ba-a94a-49a1-880a-381c0fb70e4b</xr:TypeId>
-				<xr:ValueId>3490a3f5-bfdb-4879-ac19-5573fe6ec608</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СтрокиНЗ" category="RecordSet">
+				<xr:TypeId>1f70604c-4f0c-4d98-ba3d-8b0e01cf5693</xr:TypeId>
+				<xr:ValueId>d35ab60f-71a2-42c6-9f16-1b205cdf4cc8</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.НЗ" category="RecordKey">
-				<xr:TypeId>da107395-20b2-4847-ad2d-91e8a47b1556</xr:TypeId>
-				<xr:ValueId>6ce2ce2c-cd27-49c6-aa26-d029d8ab55d2</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СтрокиНЗ" category="RecordKey">
+				<xr:TypeId>ac692f41-1e9e-4b72-a4be-d4d76c00ef11</xr:TypeId>
+				<xr:ValueId>770965ce-b802-4c17-89ca-8bf94b4d9a78</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.НЗ" category="RecordManager">
-				<xr:TypeId>92326bee-56e8-4b33-a093-27b34c5c591b</xr:TypeId>
-				<xr:ValueId>bb802c9e-8cf3-4ffe-838a-3cf60416284d</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СтрокиНЗ" category="RecordManager">
+				<xr:TypeId>b04fab37-0339-4cbf-8a83-daf040a4e1f1</xr:TypeId>
+				<xr:ValueId>23b42b8b-8a2d-499d-a1d6-851f6ef3a171</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>НЗ</Name>
+			<Name>СтрокиНЗ</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>наряд-заказы</v8:content>
+					<v8:content>Строки наряд-заказов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm>InformationRegister.НЗ.Form.ФормаЗаписи</DefaultRecordForm>
+			<DefaultRecordForm>InformationRegister.СтрокиНЗ.Form.ФормаЗаписи</DefaultRecordForm>
 			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
@@ -148,7 +148,7 @@
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
 			</StandardAttributes>
-			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -163,64 +163,20 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Dimension uuid="fd73c233-ac79-4ca8-8637-1fcd31447215">
+			<Resource uuid="130cc423-6501-4b87-99c7-d4d372e1e485">
 				<Properties>
-					<Name>ДатаЗаявки</Name>
+					<Name>ВидРабот</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата заявки</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-				</Properties>
-			</Dimension>
-			<Dimension uuid="06005354-c7e5-4bf6-bc87-e3f78b961fc8">
-				<Properties>
-					<Name>НомерЗаявки</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер заявки</v8:content>
+							<v8:content>Вид работ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>15</v8:Length>
+							<v8:Length>1024</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -245,29 +201,68 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
-			</Dimension>
-			<Dimension uuid="7a757c4e-2db2-4f5d-b16c-720309e509e2">
+			</Resource>
+			<Resource uuid="192c160d-bd61-475a-93d2-2a6052eac8fd">
 				<Properties>
-					<Name>НомерНЗ</Name>
+					<Name>ВремяРабот</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер наряд-заказа</v8:content>
+							<v8:content>Время работ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>15</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>true</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Resource>
+			<Dimension uuid="22159b80-08fc-4ee8-af23-9e7f45b5cf70">
+				<Properties>
+					<Name>ДатаНЗ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата наряд-заказа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -297,21 +292,22 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="7db15f9c-2b0a-4e3c-bb50-59bc984f5c51">
+			<Dimension uuid="6d19bb19-2077-4afc-aa63-b163372cb8ae">
 				<Properties>
-					<Name>ДатаНЗ</Name>
+					<Name>НомерНЗ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата наряд-заказа</v8:content>
+							<v8:content>Номер наряд-заказа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>1С-Архитектор бизнеса</Vendor>
-			<Version>2.2.7</Version>
+			<Version>2.2.9</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -103,7 +103,7 @@
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Мобильное автоматизированное рабочее место внедренца. Автоматизирует работу заявкам в производство из АБФ.</v8:content>
+					<v8:content>Мобильное автоматизированное рабочее место внедренца. Автоматизирует работу с заявками в производство из АБФ.</v8:content>
 				</v8:item>
 			</DetailedInformation>
 			<Copyright>
@@ -131,6 +131,7 @@
 			<Language>Русский</Language>
 			<CommonModule>ОбменСАБФ</CommonModule>
 			<CommonModule>Гео</CommonModule>
+			<CommonModule>Вспомогательный</CommonModule>
 			<CommonCommand>ПолучитьЗаявки</CommonCommand>
 			<CommonCommand>ОтправитьЗаявкиНаСервер</CommonCommand>
 			<CommonCommand>ЗаявкиПринятые</CommonCommand>
@@ -148,6 +149,7 @@
 			<InformationRegister>ЗаявкиПринятые</InformationRegister>
 			<InformationRegister>События</InformationRegister>
 			<InformationRegister>НЗ</InformationRegister>
+			<InformationRegister>СтрокиНЗ</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
