@@ -33,61 +33,22 @@
 					<ChildItemsWidth>Equal</ChildItemsWidth>
 					<ExtendedTooltip name="грЗаявкаРасширеннаяПодсказка" id="53"/>
 					<ChildItems>
-						<InputField name="Состояние" id="1">
+						<InputField name="Состояние" id="61">
 							<DataPath>Запись.Состояние</DataPath>
-							<SkipOnInput>false</SkipOnInput>
-							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
-							<MultiLine>false</MultiLine>
-							<ListChoiceMode>true</ListChoiceMode>
-							<TextEdit>false</TextEdit>
-							<ChoiceList>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>не обработана</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xr:DesignTimeRef">Enum.СостояниеЗаявкиПереданные.EnumValue.НеОбработана</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>принята</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xr:DesignTimeRef">Enum.СостояниеЗаявкиПереданные.EnumValue.Принята</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>отклонена</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xr:DesignTimeRef">Enum.СостояниеЗаявкиПереданные.EnumValue.Отклонена</Value>
-									</xr:Value>
-								</xr:Item>
-							</ChoiceList>
-							<ContextMenu name="СостояниеКонтекстноеМеню" id="2"/>
-							<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="3"/>
+							<ContextMenu name="СостояниеКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="63"/>
 						</InputField>
-						<InputField name="СрокИсполнения" id="22">
+						<InputField name="СрокИсполнения" id="58">
 							<DataPath>Запись.СрокИсполнения</DataPath>
-							<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="24"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исполнить к:</v8:content>
+								</v8:item>
+							</Title>
+							<Width>15</Width>
+							<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="60"/>
 						</InputField>
 						<LabelField name="Контрагент" id="13">
 							<DataPath>Запись.Контрагент</DataPath>
@@ -133,10 +94,12 @@
 						</LabelField>
 						<HTMLDocumentField name="КонтактнаяИнформация" id="34">
 							<DataPath>ТекстПроезд</DataPath>
-							<ReadOnly>true</ReadOnly>
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="КонтактнаяИнформацияКонтекстноеМеню" id="35"/>
 							<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="36"/>
+							<Events>
+								<Event name="OnClick">КонтактнаяИнформацияПриНажатии</Event>
+							</Events>
 						</HTMLDocumentField>
 					</ChildItems>
 				</Page>
