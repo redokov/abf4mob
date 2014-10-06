@@ -134,8 +134,7 @@
 			<CommonModule>Вспомогательный</CommonModule>
 			<CommonCommand>ПолучитьЗаявки</CommonCommand>
 			<CommonCommand>ОтправитьЗаявкиНаСервер</CommonCommand>
-			<CommonCommand>ЗаявкиПринятые</CommonCommand>
-			<CommonCommand>ЗаявкиПереданные</CommonCommand>
+			<CommonCommand>ОткрытьПротоколыОбмена</CommonCommand>
 			<CommonCommand>События</CommonCommand>
 			<Constant>Пользователь</Constant>
 			<Constant>Пароль</Constant>
@@ -150,6 +149,7 @@
 			<InformationRegister>События</InformationRegister>
 			<InformationRegister>НЗ</InformationRegister>
 			<InformationRegister>СтрокиНЗ</InformationRegister>
+			<InformationRegister>ПротоколОбмена</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
