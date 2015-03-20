@@ -6,6 +6,8 @@
 			<v8:content>Заявки</v8:content>
 		</v8:item>
 	</Title>
+	<AutoTitle>false</AutoTitle>
+	<ChildItemsWidth>Equal</ChildItemsWidth>
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -13,12 +15,6 @@
 	</Events>
 	<ChildItems>
 		<Pages name="Заявки" id="63">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заявки</v8:content>
-				</v8:item>
-			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -298,7 +294,7 @@
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	РегистрСведенийЗаявкиПринятые.Состояние,
-	РегистрСведенийЗаявкиПринятые.Дата,
+	РегистрСведенийЗаявкиПринятые.Дата КАК Дата,
 	РегистрСведенийЗаявкиПринятые.Номер,
 	РегистрСведенийЗаявкиПринятые.Заявка,
 	РегистрСведенийЗаявкиПринятые.Контрагент,
@@ -310,7 +306,9 @@
 	РегистрСведенийЗаявкиПринятые.Адрес,
 	РегистрСведенийЗаявкиПринятые.КонтактнаяИнформация
 ИЗ
-	РегистрСведений.ЗаявкиПринятые КАК РегистрСведенийЗаявкиПринятые</QueryText>
+	РегистрСведений.ЗаявкиПринятые КАК РегистрСведенийЗаявкиПринятые
+
+</QueryText>
 				<MainTable>InformationRegister.ЗаявкиПринятые</MainTable>
 				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
@@ -319,8 +317,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>СрокИсполнения</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 					</dcsset:order>
 					<dcsset:conditionalAppearance>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

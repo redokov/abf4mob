@@ -55,16 +55,6 @@
 			<ContextMenu name="ВидРаботКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="ВидРаботРасширеннаяПодсказка" id="18"/>
 		</InputField>
-		<InputField name="ДатаНЗ" id="28">
-			<DataPath>Запись.ДатаНЗ</DataPath>
-			<ContextMenu name="ДатаНЗКонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="ДатаНЗРасширеннаяПодсказка" id="30"/>
-		</InputField>
-		<InputField name="НомерНЗ" id="31">
-			<DataPath>Запись.НомерНЗ</DataPath>
-			<ContextMenu name="НомерНЗКонтекстноеМеню" id="32"/>
-			<ExtendedTooltip name="НомерНЗРасширеннаяПодсказка" id="33"/>
-		</InputField>
 		<InputField name="СтрокаНомер" id="34">
 			<DataPath>1/0:38363d8a-7589-4a95-a301-e861f83edbe9</DataPath>
 			<ContextMenu name="СтрокаНомерКонтекстноеМеню" id="35"/>

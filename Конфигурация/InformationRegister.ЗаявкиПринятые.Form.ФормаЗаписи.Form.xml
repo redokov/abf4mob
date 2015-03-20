@@ -37,12 +37,24 @@
 						<LabelField name="СрокИсполнения" id="22">
 							<DataPath>Запись.СрокИсполнения</DataPath>
 							<Enabled>false</Enabled>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исполнить</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="СрокИсполненияКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="СрокИсполненияРасширеннаяПодсказка" id="24"/>
 						</LabelField>
 						<LabelField name="Контрагент" id="13">
 							<DataPath>Запись.Контрагент</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Клиент</v8:content>
+								</v8:item>
+							</Title>
 							<Width>1</Width>
 							<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
@@ -50,6 +62,12 @@
 						<LabelField name="КонтактноеЛицо" id="16">
 							<DataPath>Запись.КонтактноеЛицо</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контакт</v8:content>
+								</v8:item>
+							</Title>
 							<Width>3</Width>
 							<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>

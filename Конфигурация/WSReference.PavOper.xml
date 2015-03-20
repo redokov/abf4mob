@@ -1,24 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<CommonCommand uuid="6e92ccc3-94f6-4379-be5c-c179f9dcbdc6">
+	<WSReference uuid="a65f3447-6a33-43ba-9550-1e2469b4149f">
+		<InternalInfo>
+			<xr:GeneratedType name="WSReferenceManager.PavOper" category="Manager">
+				<xr:TypeId>f225e854-44ef-4e35-a7c1-65b81448bf3c</xr:TypeId>
+				<xr:ValueId>e58cbfe0-d843-40fe-b775-30f52fc1d358</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
-			<Name>ОтправитьЗаявкиНаСервер</Name>
+			<Name>PavOper</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить заявки</v8:content>
+					<v8:content>pav-oper</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Group>NavigationPanelImportant</Group>
-			<Representation>Auto</Representation>
-			<ToolTip/>
-			<Picture/>
-			<Shortcut/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<CommandParameterType/>
-			<ParameterUseMode>Single</ParameterUseMode>
-			<ModifiesData>false</ModifiesData>
+			<LocationURL>http://a.1ab.ru/pav-oper82/ws/mobExch.1cws?wsdl</LocationURL>
 		</Properties>
-	</CommonCommand>
+	</WSReference>
 </MetaDataObject>

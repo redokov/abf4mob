@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>1С-Архитектор бизнеса</Vendor>
-			<Version>2.2.11</Version>
+			<Version>2.2.13</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -121,7 +121,7 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>Use</ModalityUseMode>
+			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousExtensionAndAddInCallUseMode>Use</SynchronousExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Version8_2</InterfaceCompatibilityMode>
 			<CompatibilityMode>Version8_3_4</CompatibilityMode>
@@ -132,6 +132,9 @@
 			<CommonModule>ОбменСАБФ</CommonModule>
 			<CommonModule>Гео</CommonModule>
 			<CommonModule>Вспомогательный</CommonModule>
+			<WSReference>abf4mob</WSReference>
+			<WSReference>PavOper</WSReference>
+			<CommonCommand>ОткрытьЗаявки</CommonCommand>
 			<CommonCommand>ПолучитьЗаявки</CommonCommand>
 			<CommonCommand>ОтправитьЗаявкиНаСервер</CommonCommand>
 			<CommonCommand>ОткрытьПротоколыОбмена</CommonCommand>
@@ -140,7 +143,7 @@
 			<Constant>Пароль</Constant>
 			<Constant>АдресСервера</Constant>
 			<CommonForm>ФормаКонстант</CommonForm>
-			<CommonForm>Основная</CommonForm>
+			<CommonForm>Заявки</CommonForm>
 			<Enum>ВидыКонтактнойИнформации</Enum>
 			<Enum>СостояниеЗаявкиПереданные</Enum>
 			<Enum>СостояниеЗаявкиПринятые</Enum>

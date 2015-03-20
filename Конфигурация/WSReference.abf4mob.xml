@@ -1,24 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<CommonCommand uuid="6e92ccc3-94f6-4379-be5c-c179f9dcbdc6">
+	<WSReference uuid="bbda24df-287a-46c7-94fd-198def979952">
+		<InternalInfo>
+			<xr:GeneratedType name="WSReferenceManager.abf4mob" category="Manager">
+				<xr:TypeId>51069ddf-8861-4f2e-a8d4-986c3125e605</xr:TypeId>
+				<xr:ValueId>2470d41f-73c5-4995-b027-5c1e7faa8746</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
-			<Name>ОтправитьЗаявкиНаСервер</Name>
+			<Name>abf4mob</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить заявки</v8:content>
+					<v8:content>Abf4mob</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Group>NavigationPanelImportant</Group>
-			<Representation>Auto</Representation>
-			<ToolTip/>
-			<Picture/>
-			<Shortcut/>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<CommandParameterType/>
-			<ParameterUseMode>Single</ParameterUseMode>
-			<ModifiesData>false</ModifiesData>
+			<LocationURL>http://a.1ab.ru/abf4mob/ws/mobExch.1cws?wsdl</LocationURL>
 		</Properties>
-	</CommonCommand>
+	</WSReference>
 </MetaDataObject>

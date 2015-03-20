@@ -23,7 +23,7 @@
 			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
 			<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
 			<Width>30</Width>
-			<DropListButton>false</DropListButton>
+			<DropListButton>true</DropListButton>
 			<ChoiceButton>false</ChoiceButton>
 			<ClearButton>true</ClearButton>
 			<ListChoiceMode>true</ListChoiceMode>
@@ -40,20 +40,7 @@
 								<v8:content>abf4mob</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:string">a.1ab.ru/abf4mob</Value>
-					</xr:Value>
-				</xr:Item>
-				<xr:Item>
-					<xr:Presentation/>
-					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-						<Presentation>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>localhost</v8:content>
-							</v8:item>
-						</Presentation>
-						<Value xsi:type="xs:string">localhost/abf</Value>
+						<Value xsi:type="xs:string">abf4mob</Value>
 					</xr:Value>
 				</xr:Item>
 				<xr:Item>
@@ -66,7 +53,7 @@
 								<v8:content>pav-oper</v8:content>
 							</v8:item>
 						</Presentation>
-						<Value xsi:type="xs:string">a.1ab.ru/pav-oper82</Value>
+						<Value xsi:type="xs:string">PavOper</Value>
 					</xr:Value>
 				</xr:Item>
 			</ChoiceList>
